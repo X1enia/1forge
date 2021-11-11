@@ -1,6 +1,6 @@
-public class TaskWithStar {
+package lesson2;
 
-    int arg1;
+public class TaskWithStar {
 
     public static void main (String [] args) {
         long formulaGauss = formulaGauss(1001);

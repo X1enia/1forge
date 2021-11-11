@@ -1,7 +1,6 @@
-public class SecondProgram {
+package lesson2;
 
-    int arg1;
-    int arg2;
+public class SecondProgram {
 
     public static void main(String[] args) {
 
