@@ -27,11 +27,11 @@ public class ThirdProgram {
             if (discriminant < 0) {
                 System.out.println("Нет действительных решений уравнения");
             } else if (discriminant > 0) {
-                double firstX = getFirstX(a, b, c, discriminant);
-                double secondX = getSecondX(a, b, c, discriminant);
+                double firstX = getFirstX(a, b, discriminant);
+                double secondX = getSecondX(a, b, discriminant);
                 System.out.println("Корень квадратного уравнения " + firstX + " " + secondX);
             } else {
-                System.out.println(getFirstX(a, b, c, discriminant));
+                System.out.println(getFirstX(a, b, discriminant));
             }
         }
     }
@@ -40,11 +40,11 @@ public class ThirdProgram {
         return ((b * b) - (4 * a * c));
     }
 
-    public static double getFirstX(int a, int b, int c, int discriminant) {
+    public static double getFirstX(int a, int b, int discriminant) {
         return ((-b + Math.sqrt(discriminant)) / (2 * a));
     }
 
-    public static double getSecondX(int a, int b, int c, int discriminant) {
+    public static double getSecondX(int a, int b, int discriminant) {
         return ((-b - Math.sqrt(discriminant)) / (2 * a));
     }
 }
