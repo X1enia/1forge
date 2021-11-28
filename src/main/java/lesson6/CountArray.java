@@ -26,7 +26,6 @@ public class CountArray {
                 sn.next();
             }
         }
-
         array = new double[num];
         for (int i = 0; i < array.length; i++) {
             array[i] = Math.random();
