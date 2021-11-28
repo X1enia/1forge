@@ -1,22 +1,28 @@
 package lesson7;
 
 public class Cat {
-    String name;
-    int run;
-    int swim;
+    private String name;
+    private final int runDistance = 200;
 
-    public void setRun() {
-        if (run <= 0) {
-            System.out.println(name + " не умеет бегать");
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void doRun(int distance) {
+        if (distance <= 0) {
+            System.out.println("Введите значение больше нуля!");
+        } else if (distance <= this.runDistance) {
+            System.out.println(this.name + " пробежал " + distance + " метров.");
         } else {
-            System.out.println(name + " пробежал " + run + " метров.");
+            System.out.println(this.name + " может бегать только на " + this.runDistance);
         }
     }
-    public void setSwim() {
-        if (swim <= 0) {
-            System.out.println(name + " не умеет плавать.");
-        } else {
-            System.out.println(name + " проплыл " + swim + " метров.");
-        }
+
+    public void doSwim(int distance) {
+        System.out.println(getName() + " не умеет плавать");
     }
 }

@@ -3,43 +3,28 @@ package lesson7;
 public class Main {
     public static void main(String[] args) {
         Cat cat = new Cat();
-        cat.name = "Барсик";
-        cat.run = 200;
-        cat.swim = 0;
-
-        cat.setRun();
-        cat.setSwim();
+        cat.setName("Барсик");
+        cat.doRun(50);
+        cat.doSwim(100500);
 
         Dog dog = new Dog();
-        dog.name = "Бобик";
-        dog.run = 500;
-        dog.swim = 10;
-
-        dog.setRun();
-        dog.setSwim();
+        dog.setName("Бобик");
+        dog.doRun(500);
+        dog.doSwim(10);
 
         Tiger tiger = new Tiger();
-        tiger.name = "Шерхан";
-        tiger.run = 1000;
-        tiger.swim = 20;
-
-        tiger.setRun();
-        tiger.setSwim();
+        tiger.setName("Шерхан");
+        tiger.doRun(1000);
+        tiger.doSwim(20);
 
         Rat rat = new Rat();
-        rat.name = "Рататуй";
-        rat.run = 15;
-        rat.swim = 5;
-
-        rat.setRun();
-        rat.setSwim();
+        rat.setName("Рататуй");
+        rat.doRun(15);
+        rat.doSwim(5);
 
         Gazelle gazelle = new Gazelle();
-        gazelle.name = "Газель";
-        gazelle.run = 2000;
-        gazelle.swim = 3;
-
-        gazelle.setRun();
-        gazelle.setSwim();
+        gazelle.setName("Газель");
+        gazelle.doRun(2000);
+        gazelle.doSwim(3);
     }
 }

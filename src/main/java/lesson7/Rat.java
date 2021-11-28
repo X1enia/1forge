@@ -1,23 +1,35 @@
 package lesson7;
 
 public class Rat {
-    String name;
-    int run;
-    int swim;
+    private String name;
+    private final int runDistance = 15;
+    private final int swimDistance = 5;
 
-    public void setRun() {
-        if (run <= 0) {
-            System.out.println(name + " не умеет бегать");
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void doRun(int distance) {
+        if (distance <= 0) {
+            System.out.println(this.name + " не умеет бегать");
+        } else if (distance <= this.runDistance) {
+            System.out.println(this.name + " пробежал " + distance + " метров.");
         } else {
-            System.out.println(name + " пробежал " + run + " метров.");
+            System.out.println(this.name + " может бегать только на " + this.runDistance);
         }
     }
 
-    public void setSwim() {
-        if (swim <= 0) {
-            System.out.println(name + " не умеет плавать.");
+    public void doSwim(int distance) {
+        if (distance <= 0) {
+            System.out.println(this.name + " не умеет плавать.");
+        } else if (distance <= this.swimDistance) {
+            System.out.println(this.name + " проплыл " + distance + " метров.");
         } else {
-            System.out.println(name + " проплыл " + swim + " метров.");
+            System.out.println(this.name + " может плыть только на " + this.swimDistance);
         }
     }
 }
