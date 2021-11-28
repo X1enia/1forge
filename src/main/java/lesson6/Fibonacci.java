@@ -7,24 +7,30 @@ public class Fibonacci {
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
 
-        long[] fibArray = calculateFibCache(50);
-        boolean exit = true;
+        long[] fibArray = calculateFibCache(10);
+        boolean isNotCorrect = true;
+        int num = 0;
 
-        while (exit) {
+        while (isNotCorrect) {
             System.out.println("Введите число: ");
-            int numFib = sn.nextInt();
-            if (numFib >= fibArray.length) {
-               fibArray = calculateFibCache(numFib + 1);
+            if (sn.hasNextInt()) {
+                num = sn.nextInt();
+                System.out.println("Я получил число " + num);
+                if (num < 1) {
+                    System.out.println("Введите число больше или равное 1!");
+                } else {
+                    System.out.println("Спасибо за целое число!");
+                    isNotCorrect = false;
+                }
             }
-            System.out.println(fibArray [numFib]);
-            System.out.println("Если хотите выйти из программы, введите exit.");
-            String e = sn.next();
-            if (e.equals("exit")) {
-                exit = false;
+            if (num >= fibArray.length) {
+                fibArray = calculateFibCache(num + 1);
             }
+            System.out.println(fibArray[num]);
         }
     }
-    public static long [] calculateFibCache(int numFib) {
+
+    public static long[] calculateFibCache(int numFib) {
         long[] fibArray = new long[numFib];
         fibArray[0] = 0;
         fibArray[1] = 1;
