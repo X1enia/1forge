@@ -2,7 +2,7 @@ package lesson7;
 
 public class Cat {
     private String name;
-    private final int runDistance = 200;
+    private static final int RUN_DISTANCE = 200;
 
     public String getName() {
         return name;
@@ -15,10 +15,10 @@ public class Cat {
     public void doRun(int distance) {
         if (distance <= 0) {
             System.out.println("Введите значение больше нуля!");
-        } else if (distance <= this.runDistance) {
+        } else if (distance <= RUN_DISTANCE) {
             System.out.println(this.name + " пробежал " + distance + " метров.");
         } else {
-            System.out.println(this.name + " может бегать только на " + this.runDistance);
+            System.out.println(this.name + " может бегать только на " + RUN_DISTANCE);
         }
     }
 
