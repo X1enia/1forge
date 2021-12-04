@@ -1,15 +1,14 @@
 package lesson8;
 
 public class Tiger extends AbstractAnimal {
-    private String voice;
+    private static String VOICE = "ррр";
 
-    public Tiger(String name, String voice) {
+    public Tiger(String name) {
         this.setName(name);
-        this.voice = voice;
     }
 
     @Override
     public void doSound() {
-        System.out.println(this.getName() + " говорит: " + this.voice);
+        System.out.println(this.getName() + " говорит: " + VOICE);
     }
 }
