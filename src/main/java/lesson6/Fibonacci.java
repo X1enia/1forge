@@ -18,7 +18,7 @@ public class Fibonacci {
         calculateFibCache(5, fibIndex, fibArray);
         fibIndex = 4;
         while (isNotCorrect) {
-            System.out.println("Введите число: ");
+            System.out.println("Введите число (Для выхода наберите exit): ");
             if (sn.hasNextInt()) {
                 num = sn.nextInt();
                 System.out.println("Я получил число " + num);
@@ -29,7 +29,6 @@ public class Fibonacci {
                     System.out.println("Введите число меньше 50!");
                 } else {
                     System.out.println("Спасибо за целое число!");
-                    isNotCorrect = false;
                     if (num >= fibIndex) {
                         calculateFibCache(num + 1, fibIndex, fibArray);
                         System.out.println(fibArray[num - 1]);
@@ -37,6 +36,11 @@ public class Fibonacci {
                     } else {
                         System.out.println(fibArray[num - 1]);
                     }
+                }
+            } else {
+                String text = sn.nextLine();
+                if (text.equals("exit")) {
+                    isNotCorrect = false;
                 }
             }
         }
