@@ -12,7 +12,7 @@ public class ControlPoint {
         }
         double speed = auto.getSpeed();
         if (speed > 100) {
-            throw new SpeedException("Скорость автомобиля " + auto.getAutoType() + " " + auto.getNumber() + " превышает 100. Полиция ловит преступника.");
+            throw new SpeedException("Скорость автомобиля " + auto.getAutoType() + " " + auto.getNumber() + " превышает 100. Полиция ловит преступника, номер пойманного автомобиля: " + auto.getNumber() + ".");
         } else if (speed > 80) {
             throw new SpeedException("Скорость автомобиля " + auto.getAutoType() + " " + auto.getNumber() + " превышает 80.");
         } else if (speed < 0) {
