@@ -1,18 +1,15 @@
-package lesson14;
-
-import java.util.ArrayList;
-import java.util.List;
+package lesson14.Arrays;
 
 public class PhoneBook {
 
-   private String name;
-   private String phoneNumber;
-   private List<PhoneBook> contacts = new ArrayList<>();
+    private String name;
+    private String phoneNumber;
+    private PhoneBook[] contacts = new PhoneBook[10000];
 
-   public PhoneBook(String name, String phoneNumber) {
-       this.name = name;
-       this.phoneNumber = phoneNumber;
-   }
+    public PhoneBook(String name, String phoneNumber) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+    }
 
     public String getName() {
         return name;
@@ -30,11 +27,11 @@ public class PhoneBook {
         this.phoneNumber = phoneNumber;
     }
 
-    public List<PhoneBook> getContacts() {
+    public PhoneBook[] getContacts() {
         return contacts;
     }
 
-    public void setContacts(List<PhoneBook> contacts) {
+    public void setContacts(PhoneBook[] contacts) {
         this.contacts = contacts;
     }
 }

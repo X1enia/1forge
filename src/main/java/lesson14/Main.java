@@ -1,13 +1,10 @@
 package lesson14;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Main {
 
-    private static final int SUBS_SIZE = 1000;
+    private static final int SUBS_SIZE = 10000;
 
     public static void main(String[] args) {
 
@@ -19,17 +16,31 @@ public class Main {
         for (int i = 0; i < 100; i++) {
             setupContacts(subs);
         }
-        Integer maximumContacts = subs.stream()
-                .mapToInt(p -> p.getContacts().size())
-                .max().orElse(0);
-        System.out.println(maximumContacts);
+
+        HashMap<PhoneBook, Integer> contacts = new HashMap<>();
+
+        subs.forEach(sub -> sub.getContacts().forEach(contact -> {
+            if (contacts.get(contact) != null) {
+                Integer currentCount = contacts.get(contact) + 1;
+                contacts.put(contact, currentCount);
+            } else {
+                contacts.put(contact, 1);
+            }
+        }));
+
+        Map.Entry<PhoneBook, Integer> maxContact = contacts.entrySet().stream()
+                .max(Map.Entry.comparingByValue())
+                .orElse(null);
+        if (maxContact != null) {
+            System.out.println(maxContact.getKey().getName());
+        }
     }
 
     private static void setupContacts(List<PhoneBook> subs) {
         Random random = new Random();
         int high = subs.size();
         for (int i = 0; i < SUBS_SIZE; i++) {
-            if (random.nextInt(50) > 35) {
+            if (random.nextInt(50) > 20) {
                 int inContact = random.nextInt(high);
                 int outContact = random.nextInt(high);
                 if (inContact != outContact) {
