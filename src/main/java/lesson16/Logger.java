@@ -25,7 +25,7 @@ public class Logger implements Runnable {
     @Override
     public void run() {
         System.out.printf("Начал работу поток %s\n", Thread.currentThread().getName());
-        while (System.currentTimeMillis() <= currentTimeMillis + LIFETIME) { // время работы потока ограничено 1 минутой
+        while (System.currentTimeMillis() <= currentTimeMillis + LIFETIME) {
             try (FileWriter fw = new FileWriter(fileName, true)) {
                 fw.write(generateString());
                 Thread.sleep(new Random().nextInt(5_000));
