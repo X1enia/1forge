@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employees>
+    <employee n="Валерий" num="34756" l="valera">
+        <d>
+            <city>Сызрань</city>
+            <subdivision>45633</subdivision>
+        </d>
+        <e>
+            <occupation>Lead разработчик</occupation>
+            <salary>120000</salary>
+        </e>
+    </employee>
+    <employee n="Ефросинья" num="435645" l="frosya">
+        <d>
+            <city>Санкт-Петербург</city>
+            <subdivision>34678</subdivision>
+        </d>
+        <e>
+            <occupation>Middle разработчик</occupation>
+            <salary>80000</salary>
+        </e>
+    </employee>
+</employees>

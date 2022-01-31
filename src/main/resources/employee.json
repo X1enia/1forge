@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Петр",
+    "number": "1325346",
+    "login": "peter",
+    "department": {
+      "city": "Москва",
+      "subdivision": "1"
+    },
+    "employment": {
+      "occupation": "Junior разработчик",
+      "salary": 30000
+    }
+  },
+  {
+    "name": "Антонина",
+    "number": "734648",
+    "login": "tonya22",
+    "department": {
+      "city": "Хабаровск",
+      "subdivision": "182"
+    },
+    "employment": {
+      "occupation": "Middle разработчик",
+      "salary": 100000
+    }
+  },
+  {
+    "name": "Виталий",
+    "number": "73645",
+    "login": "vita",
+    "department": {
+      "city": "Екатеринбург",
+      "subdivision": "854748"
+    },
+    "employment": {
+      "occupation": "Lead разработчик",
+      "salary": 200000
+    }
+  },
+  {
+    "name": "Татьяна",
+    "number": "3456",
+    "login": "tatyana",
+    "department": {
+      "city": "Владикавказ",
+      "subdivision": "943857"
+    },
+    "employment": {
+      "occupation": "Junior разработчик",
+      "salary": 45000
+    }
+  },
+  {
+    "name": "Валерий",
+    "number": "34756",
+    "login": "valera",
+    "department": {
+      "city": "Сызрань",
+      "subdivision": "45633"
+    },
+    "employment": {
+      "occupation": "Lead разработчик",
+      "salary": 120000
+    }
+  },
+  {
+    "name": "Ефросинья",
+    "number": "435645",
+    "login": "frosya",
+    "department": {
+      "city": "Санкт-Петербург",
+      "subdivision": "34678"
+    },
+    "employment": {
+      "occupation": "Middle разработчик",
+      "salary": 80000
+    }
+  },
+  {
+    "name": "Агафон",
+    "number": "390574",
+    "login": "Agaphone",
+    "department": {
+      "city": "Тверь",
+      "subdivision": "992364"
+    },
+    "employment": {
+      "occupation": "Junior разработчик",
+      "salary": 35000
+    }
+  },
+  {
+    "name": "Кристина",
+    "number": "348565",
+    "login": "Kristy",
+    "department": {
+      "city": "Новосибирск",
+      "subdivision": "943123"
+    },
+    "employment": {
+      "occupation": "Lead разработчик",
+      "salary": 135000
+    }
+  },
+  {
+    "name": "Антон",
+    "number": "87542",
+    "login": "anton",
+    "department": {
+      "city": "Мурманск",
+      "subdivision": "3847542"
+    },
+    "employment": {
+      "occupation": "Junior разработчик",
+      "salary": 20000
+    }
+  },
+  {
+    "name": "Апполинария",
+    "number": "3056",
+    "login": "polina",
+    "department": {
+      "city": "Гатчина",
+      "subdivision": "9431877"
+    },
+    "employment": {
+      "occupation": "Middle разработчик",
+      "salary": 78000
+    }
+  }
+]
