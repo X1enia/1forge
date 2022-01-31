@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employees>
+    <employee n="Петр" num="1325346" l="peter">
+        <d city="Москва" subdivision="1"/>
+        <employment salary="30000">
+            <occupation>Junior разработчик</occupation>
+        </employment>
+    </employee>
+    <employee n="Антонина" num="734648" l="tonya22">
+        <d city="Хабаровск" subdivision="182"/>
+        <employment salary="100000">
+            <occupation>Middle разработчик</occupation>
+        </employment>
+    </employee>
+    <employee n="Виталий" num="73645" l="vita">
+        <d city="Екатеринбург" subdivision="854748"/>
+        <employment salary="200000">
+            <occupation>Lead разработчик</occupation>
+        </employment>
+    </employee>
+    <employee n="Татьяна" num="3456" l="tatyana">
+        <d city="Владикавказ" subdivision="943857"/>
+        <employment salary="45000">
+            <occupation>Junior разработчик</occupation>
+        </employment>
+    </employee>
+    <employee n="Валерий" num="34756" l="valera">
+        <d city="Сызрань" subdivision="45633"/>
+        <employment salary="120000">
+            <occupation>Lead разработчик</occupation>
+        </employment>
+    </employee>
+    <employee n="Ефросинья" num="435645" l="frosya">
+        <d city="Санкт-Петербург" subdivision="34678"/>
+        <employment salary="80000">
+            <occupation>Middle разработчик</occupation>
+        </employment>
+    </employee>
+    <employee n="Агафон" num="390574" l="Agaphone">
+        <d city="Тверь" subdivision="992364"/>
+        <employment salary="35000">
+            <occupation>Junior разработчик</occupation>
+        </employment>
+    </employee>
+    <employee n="Кристина" num="348565" l="Kristy">
+        <d city="Новосибирск" subdivision="943123"/>
+        <employment salary="135000">
+            <occupation>Lead разработчик</occupation>
+        </employment>
+    </employee>
+    <employee n="Антон" num="87542" l="anton">
+        <d city="Мурманск" subdivision="3847542"/>
+        <employment salary="20000">
+            <occupation>Junior разработчик</occupation>
+        </employment>
+    </employee>
+    <employee n="Апполинария" num="3056" l="polina">
+        <d city="Гатчина" subdivision="9431877"/>
+        <employment salary="78000">
+            <occupation>Middle разработчик</occupation>
+        </employment>
+    </employee>
+</employees>
