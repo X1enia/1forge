@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-public class Main {
+public class PhoneBookArray {
 
     public static void main(String [] args) {
 

@@ -1,6 +1,6 @@
 package lesson12;
 
-public class Main {
+public class Arrays {
     public static void main(String[] args) {
         String[][] array = new String[4][4];
         array[0] = new String[]{"5", "5", "5", "5"};

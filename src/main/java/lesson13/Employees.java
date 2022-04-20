@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 
-public class Main {
+public class Employees {
 
     public static void main(String[] args) {
         List<Employee> employees = new ArrayList<>();

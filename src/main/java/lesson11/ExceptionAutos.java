@@ -5,7 +5,7 @@ import lesson11.exceptions.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class ExceptionAutos {
     public static void main(String[] args) {
         List<Automobile> automobileList = genAuto();
         for (int i = 0; i < automobileList.size(); i++) {

@@ -2,7 +2,7 @@ package lesson14;
 
 import java.util.*;
 
-public class Main {
+public class PhoneBookList {
 
     private static final int SUBS_SIZE = 10000;
 

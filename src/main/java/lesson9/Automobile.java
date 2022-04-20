@@ -15,5 +15,6 @@ public abstract class Automobile {
         this.name = name;
     }
 
+
     public abstract void doDrive(int distance);
 }

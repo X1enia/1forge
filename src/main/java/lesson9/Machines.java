@@ -1,6 +1,6 @@
 package lesson9;
 
-public class Main {
+public class Machines {
     public static void main (String [] args) {
         Car car = new Car("Kia");
         Car car1 = new Car("Dodge");

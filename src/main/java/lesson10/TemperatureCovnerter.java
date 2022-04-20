@@ -1,6 +1,6 @@
 package lesson10;
 
-public class Main {
+public class TemperatureCovnerter {
     public static void main(String[] args) {
         TempConv tc = new TempConv();
         double resultC = tc.convertToCelsius(100, Scale.FAHRENHEIT);

@@ -1,6 +1,6 @@
 package lesson7;
 
-public class Main {
+public class Zoo {
     public static void main(String[] args) {
         Cat cat = new Cat();
         cat.setName("Барсик");
